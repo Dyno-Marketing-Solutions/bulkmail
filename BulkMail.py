@@ -6,10 +6,9 @@ from email.message import EmailMessage
 import functions as func
 
 ## LOG-LINE
-## BulkMail V1 is a simple lightweight software for sending HTML Emails in BULK
+## tagline needs to change
 
-NAME = "[name]" ## Will Work On It In V2
-CSV = "Uploading CSV Based Email Lists" ## Will Work On It In V2
+
 
 ### Pre Validation Code Starts Here (STILL REMAINING) ###
 try:
@@ -986,7 +985,6 @@ def sender_email_layout():
 	sender_root.geometry("700x650")
 	sender_root.resizable(0,0)
 	sender_root.configure(background="#D1FFFF")
-	sender_root.iconbitmap("./icons/ico-files/icon-16.ico")
 	global data_list  
 	data_list = Listbox(sender_root, border=3, height=10, width=55, font=("bold", 15)) 
 	data_list.place(x=30, y=350)
@@ -1212,6 +1210,7 @@ if func.password_exists() == True:
 else:
 	home_layout()
 
+print("Committed Some Changes")
 
 db.commit()
 db.close()
